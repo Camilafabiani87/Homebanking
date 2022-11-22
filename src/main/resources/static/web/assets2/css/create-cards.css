@@ -1,0 +1,215 @@
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: .2rem !important;
+  color: var(--bs-list-group-color);
+  text-decoration: none;
+  background-color: var(--bs-list-group-bg);
+  border: solid 1px #cf5b4e ;
+}
+
+.list-group-item:hover{
+  color: #cf5b4e;
+}
+.contenedorCreaTarjeta{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-image: url(/web/assets/img/fondoTarjetas.png);
+    background-repeat: repeat;
+    background-size: contain;
+}
+.creaNuevaTarjeta{
+    min-height: 25rem;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    opacity: 0.8;
+    background-color:#d14334;
+    border-radius: 2rem;
+    box-shadow: 1px 1px 3px 3px black;
+  
+   
+   
+}
+.imgLogin{
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   height: 5rem;
+   border-radius: 100%;
+   border: 3px solid black;
+   
+  }
+.grow_box{
+    background-image: linear-gradient(to right bottom, #ca918a, #ce746a, #cf5b4e, #d14334, #d33927);
+    border: none;
+}
+    .botonCrearTarjeta a {
+        color: #fefefe;
+        text-decoration: none;
+       
+      }
+/* .botonCrearTarjeta{
+  background-image: url(/web/assets/img/fondoTarjetas.png);
+  background-repeat: repeat;
+  background-size: contain;
+} */
+      /* button:hover {
+        color: #d14334;
+      } */
+
+      .grow_box {
+        font-size: 2em;
+        background: #d14334;
+        color: #fff;
+        border: 0.25rem solid #d14334;
+        border-radius: 1rem;
+        box-shadow: 3px 3px #212121;
+        padding: 0.85em 0.75em;
+        margin: 1rem;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+      }
+      .grow_box:hover {
+        color: #d14334;
+      }
+      .grow_box::after {
+        
+        content: "";
+        background: #ecf0f1;
+        /* color: #d14334; */
+        position: absolute;
+        z-index: -1;
+        padding: 0.85em 0.75em;
+        display: block;
+      }
+      .grow_box[class^="slide"]::after {
+        transition: all 0.35s;
+      }
+      .grow_box[class^="slide"]:hover::after {
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        transition: all 0.35s;
+      }
+      .grow_box.slide_from_left::after {
+        top: 0;
+        bottom: 0;
+        left: -100%;
+        right: 100%;
+      }
+      .grow_box.slide_from_right::after {
+        top: 0;
+        bottom: 0;
+        left: 100%;
+        right: -100%;
+      }
+      .grow_box.slide_from_top::after {
+        left: 0;
+        right: 0;
+        top: -100%;
+        bottom: 100%;
+      }
+      .grow_box.slide_from_bottom::after {
+        left: 0;
+        right: 0;
+        top: 100%;
+        bottom: -100%;
+      }
+      .grow_box[class^="grow"]::after {
+        transition: all 0.3s ease;
+      }
+      .grow_box[class^="grow"]:hover::after {
+        transition: all 0.3s ease-out;
+      }
+      .grow_box.grow_box::after {
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        transform: scale(0, 0);
+      }
+      .grow_box.grow_box:hover::after {
+        transform: scale(1, 1);
+      }
+      .grow_box.grow_ellipse::after {
+        border-radius: 50%;
+        left: -50%;
+        right: -50%;
+        top: -150%;
+        bottom: -150%;
+        line-height: 8.34em;
+        transform: scale(0, 0);
+      }
+      .grow_box.grow_ellipse:hover::after {
+        transform: scale(1, 1);
+      }
+      .grow_box.grow_skew_forward::after {
+        left: -20%;
+        right: -20%;
+        top: 0;
+        bottom: 0;
+        transform: skewX(-45deg) scale(0, 1);
+      }
+      .grow_box.grow_skew_forward:hover::after {
+        transform: skewX(-45deg) scale(1, 1);
+      }
+      .grow_box.grow_skew_backward::after {
+        left: -20%;
+        right: -20%;
+        top: 0;
+        bottom: 0;
+        transform: skewX(45deg) scale(0, 1);
+      }
+      .grow_box.grow_skew_backward:hover::after {
+        transform: skewX(45deg) scale(1, 1);
+      }
+      .grow_box.grow_spin::after {
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        transform: scale(0, 0) rotate(-180deg);
+      }
+      .grow_box.grow_spin:hover::after {
+        transform: scale(1, 1) rotate(0deg);
+      }
+
+.form-select{
+    width: 15rem !important;
+}
+
+.contieneIconoTarjeta{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.eligeTarjeta{
+  height: 10rem;
+  justify-content: center;
+     /* width: 100% !important; */
+     /* background-position: right;
+     background-size: contain; */
+   }
+@media screen and (max-width:375px) {
+    .creaNuevaTarjeta{
+      min-height: 25rem;
+      width: 80%;
+    
+  }
+  .tituloPrincipal{
+    font-size: 1.5rem !important;
+  }
+  }

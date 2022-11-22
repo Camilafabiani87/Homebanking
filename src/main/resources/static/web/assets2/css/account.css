@@ -1,0 +1,242 @@
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: .2rem !important;
+  color: var(--bs-list-group-color);
+  text-decoration: none;
+  background-color: var(--bs-list-group-bg);
+  border: solid 1px #cf5b4e ;
+}
+
+.list-group-item:hover{
+  color: #cf5b4e;
+}
+footer{
+  margin-top: 1rem !important;
+}
+.footerVistas {
+  margin-bottom: 0rem;
+  /* margin-left: -15rem; */
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+ /*TABLA*/
+ .contenedorTabla{
+  display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    
+ }
+ .tablaTransacciones{
+    min-height: 20rem;
+    width: 80%;
+  
+  }
+
+  .tablaTexto{
+    text-align: center;
+    border-radius: 2rem;
+  }
+  .text-danger td{
+    
+    font-size: 1rem;
+    color: #cf4d3e;
+  }
+  .text-success td{
+    
+    font-size: 1rem;
+    color: #4c7c4d ;
+  }
+
+  .tipoTarjeta{
+    color: #fefefe !important;
+  }
+  .cabecera{
+    background-color: #d14334!important;
+  }
+
+  .botonCrearCuenta{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .grow_box {
+    font-size: 2em;
+    background: #d14334;
+    color: #fff;
+    border: 0.25rem solid #d14334;
+    border-radius: 1rem;
+    box-shadow: 3px 3px #212121;
+    padding: 0.85em 0.75em;
+    margin: 1rem;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .grow_box:hover {
+    color: #d14334;
+  }
+  .grow_box::after {
+    content: "";
+    background: #ecf0f1;
+    position: absolute;
+    z-index: -1;
+    padding: 0.85em 0.75em;
+    display: block;
+  }
+  .grow_box[class^="slide"]::after {
+    transition: all 0.35s;
+  }
+  .grow_box[class^="slide"]:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all 0.35s;
+  }
+  .grow_box.slide_from_left::after {
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+  }
+  .grow_box.slide_from_right::after {
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    right: -100%;
+  }
+  .grow_box.slide_from_top::after {
+    left: 0;
+    right: 0;
+    top: -100%;
+    bottom: 100%;
+  }
+  .grow_box.slide_from_bottom::after {
+    left: 0;
+    right: 0;
+    top: 100%;
+    bottom: -100%;
+  }
+  .grow_box[class^="grow"]::after {
+    transition: all 0.3s ease;
+  }
+  .grow_box[class^="grow"]:hover::after {
+    transition: all 0.3s ease-out;
+  }
+  .grow_box.grow_box::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: scale(0, 0);
+  }
+  .grow_box.grow_box:hover::after {
+    transform: scale(1, 1);
+  }
+  .grow_box.grow_ellipse::after {
+    border-radius: 50%;
+    left: -50%;
+    right: -50%;
+    top: -150%;
+    bottom: -150%;
+    line-height: 8.34em;
+    transform: scale(0, 0);
+  }
+  .grow_box.grow_ellipse:hover::after {
+    transform: scale(1, 1);
+  }
+  .grow_box.grow_skew_forward::after {
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+  }
+  .grow_box.grow_skew_forward:hover::after {
+    transform: skewX(-45deg) scale(1, 1);
+  }
+  .grow_box.grow_skew_backward::after {
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(45deg) scale(0, 1);
+  }
+  .grow_box.grow_skew_backward:hover::after {
+    transform: skewX(45deg) scale(1, 1);
+  }
+  .grow_box.grow_spin::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: scale(0, 0) rotate(-180deg);
+  }
+  .grow_box.grow_spin:hover::after {
+    transform: scale(1, 1) rotate(0deg);
+  }
+  .imgPdf{
+    height: 3rem;
+  }
+
+  /*MEDIAS*/
+  @media screen and (max-width:1024px) {
+   
+    .nav-linkyy{
+   font-size: 1rem;
+   text-decoration: none;
+   color: #fefefe;
+ }
+ 
+}
+@media screen and (max-width:992px) {
+
+}
+@media screen and (max-width:768px) {
+
+}
+@media screen and (max-width:425px) {
+.contenedroNav{
+  margin-top: 1rem;
+}
+  /*TABLA*/
+.tablaTransacciones{
+  min-height: 20rem;
+  width: 100%;
+
+}
+.bg-danger td{
+    font-size: .8rem;
+  }
+  .bg-success td{
+    font-size: .8rem;
+  }
+ .grow_box{
+  font-size: 1rem;
+ }
+
+ .table>:not(caption)>*>* {
+ 
+  padding: 0rem 0rem;
+  background-color: var(--bs-table-bg);
+  border-bottom-width: 1px;
+  box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+}
+}
+@media screen and (max-width:375px) {
+  .table>:not(caption)>*>* {
+    font-size: .8rem;
+  }
+}
+@media screen and (max-width:320px) {
+
+} 

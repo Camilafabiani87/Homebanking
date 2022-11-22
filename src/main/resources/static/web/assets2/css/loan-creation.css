@@ -1,0 +1,183 @@
+.contenedorCreaTarjeta{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    padding: 2rem;
+    background-image: url(/web/assets/img/fondo2.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-image: url(/web/assets/img/cuenta-icono.png);
+    background-size: contain;
+    background-repeat: repeat; */
+    /* background-size:contain; */
+    /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1037%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(243%2c 235%2c 234%2c 1)'%3e%3c/rect%3e%3cpath d='M 453%2c-2.8471426142057226 C 519.8%2c34.55 792.6%2c109.35 787%2c184.15285738579428 C 781.4%2c258.95 413%2c296.35 425%2c371.1528573857943 C 437%2c445.95 868.2%2c483.35 847%2c558.1528573857943 C 825.8%2c632.95 333.4%2c744.78 319%2c745.1528573857943 C 304.6%2c745.52 683.8%2c597.03 775%2c560' stroke='rgba(209%2c 67%2c 52%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M 760%2c-107.40238065976116 C 702.6%2c-70 370%2c4.8 473%2c79.59761934023884 C 576%2c154.4 1246%2c191.8 1275%2c266.59761934023885 C 1304%2c341.4 704.6%2c378.8 618%2c453.59761934023885 C 531.4%2c528.4 846.6%2c619.32 842%2c640.5976193402388 C 837.4%2c661.88 644.4%2c576.12 595%2c560' stroke='rgba(209%2c 67%2c 52%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M 407%2c-370.82940418268754 C 509.2%2c-333.43 967.6%2c-258.63 918%2c-183.8294041826875 C 868.4%2c-109.03 171.4%2c-71.63 159%2c3.1705958173124884 C 146.6%2c77.97 855.2%2c115.37 856%2c190.1705958173125 C 856.8%2c264.97 151.4%2c303.2 163%2c377.17059581731246 C 174.6%2c451.14 763.8%2c523.43 914%2c560' stroke='rgba(209%2c 67%2c 52%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M 352%2c-351.14301703384024 C 512%2c-313.74 1078.6%2c-238.94 1152%2c-164.1430170338402 C 1225.4%2c-89.34 757.8%2c-51.94 719%2c22.85698296615979 C 680.2%2c97.66 1042.8%2c135.06 958%2c209.8569829661598 C 873.2%2c284.66 273.6%2c326.83 295%2c396.85698296615976 C 316.4%2c466.89 911%2c527.37 1065%2c560' stroke='rgba(51%2c 50%2c 50%2c 1)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1037'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e"); */
+    /* background-repeat: no-repeat; */
+    /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1036%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(243%2c 235%2c 234%2c 1)'%3e%3c/rect%3e%3cpath d='M -660.3098425783894%2c488 C -564.31%2c403.2 -372.31%2c88.6 -180.30984257838938%2c64 C 11.69%2c39.4 107.69%2c363.6 299.6901574216106%2c365 C 491.69%2c366.4 587.69%2c62.2 779.6901574216106%2c71 C 971.69%2c79.8 1127.63%2c370.6 1259.6901574216106%2c409 C 1391.75%2c447.4 1403.94%2c292.2 1440%2c263' stroke='rgba(51%2c 50%2c 50%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -86.3588202735412%2c407 C 9.64%2c360 201.64%2c157.2 393.6411797264588%2c172 C 585.64%2c186.8 681.64%2c484 873.6411797264589%2c481 C 1065.64%2c478 1161.64%2c169.8 1353.6411797264589%2c157 C 1545.64%2c144.2 1816.37%2c416.4 1833.6411797264589%2c417 C 1850.91%2c417.6 1518.73%2c211.4 1440%2c160' stroke='rgba(209%2c 67%2c 52%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -74.29778451042324%2c350 C 21.7%2c293 213.7%2c38 405.70221548957676%2c65 C 597.7%2c92 693.7%2c469.4 885.7022154895767%2c485 C 1077.7%2c500.6 1173.7%2c149.6 1365.7022154895767%2c143 C 1557.7%2c136.4 1830.84%2c463.6 1845.7022154895767%2c452 C 1860.56%2c440.4 1521.14%2c158.4 1440%2c85' stroke='rgba(209%2c 67%2c 52%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -622.1898722125543%2c253 C -526.19%2c259.6 -334.19%2c319.8 -142.18987221255423%2c286 C 49.81%2c252.2 145.81%2c51.2 337.81012778744577%2c84 C 529.81%2c116.8 625.81%2c438.2 817.8101277874457%2c450 C 1009.81%2c461.8 1173.37%2c161.6 1297.8101277874457%2c143 C 1422.25%2c124.4 1411.56%2c314.2 1440%2c357' stroke='rgba(51%2c 50%2c 50%2c 1)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1036'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e"); */
+}
+.creaNuevaTarjeta{
+    margin-top: 2rem;
+    padding-top: 1rem;
+    min-height: 40rem;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  padding: 1rem;
+  background-image: url(/web/assets/img/fondo2.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+    border-radius: 2rem;
+    box-shadow: 1px 1px 3px 3px #0e0d0d;  
+   
+}
+/* #app{
+    background-color: rgba(243, 235, 234, 1);
+} */
+.form-label{
+    font-size: 1rem;
+    color: #fefefe;
+}
+
+.inputsTransferencias{
+    width: 30rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .5rem;
+    
+  
+}
+.descripcion{
+   height: 4rem;
+  
+}
+
+.imgLogin{
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   height: 5rem;
+   border-radius: 100%;
+   border: 3px solid black;
+   
+  }
+.grow_box{
+    background-image: linear-gradient(to right bottom, #ca918a, #ce746a, #cf5b4e, #d14334, #d33927);
+    border: none;
+}
+    .botonCrearTarjeta a {
+        color: #fefefe;
+        text-decoration: none;
+      }
+
+      button:hover {
+        color: #d14334;
+      }
+
+.form-select{
+    width: 15rem !important;
+}
+.inputCuotas{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.form-control{
+    width: 10rem;
+}
+.form-control.cuotas{
+    width: 5rem;
+}
+.div-monto{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:768px) {
+    /* .form-control{
+        width: 10rem !important;
+    } */
+    .inputsTransferencias{
+        width: 20rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: .5rem;
+        
+      
+    }
+}
+@media screen and (max-width:425px) {
+    .creaNuevaTarjeta{
+     
+        width: 100%;
+    
+       
+    }
+
+    .contenedorCreaTarjeta{
+        width: 100%;
+
+    }
+
+    .div-monto{
+        text-align: center;
+    }
+    .inputsTransferencias{
+        width: 15rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: .5rem;
+        
+      
+    }
+    .form-label{
+        text-align: center;
+    }
+    div .navbar-brand{
+        display: none;
+    }
+    .grow_box{
+        height: 6rem;
+        font-size: 1.2rem;
+    }
+    .parrafoPrestamo{
+        background-color: #fefefe;
+        font-size: 1.3rem;
+     }   
+     
+}
+@media screen and (max-width:375px) {
+ 
+   
+   
+     
+     
+  }
+  
+@media screen and (max-width:320px) {
+
+    .inputsTransferencias{
+        width: 10rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: .5rem;
+
+    }
+
+    .form-select{
+        width: 13rem !important;
+    }
+
+}

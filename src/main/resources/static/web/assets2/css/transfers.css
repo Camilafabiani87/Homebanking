@@ -1,0 +1,174 @@
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: .2rem !important;
+    color: var(--bs-list-group-color);
+    text-decoration: none;
+    background-color: var(--bs-list-group-bg);
+    border: solid 1px #cf5b4e ;
+}
+
+.list-group-item:hover{
+    color: #cf5b4e;
+}
+footer{
+    margin-top: 1rem !important;
+  }
+  .footerVistas {
+    margin-bottom: 0rem;
+    /* margin-left: -15rem; */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+.contenedorCreaTarjeta{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+
+    background-image: url(/web/assets/img/fondoLogin.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.creaNuevaTarjeta{
+    margin-top: 2rem;
+    padding-top: 1rem;
+    min-height: 40rem;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    opacity: 0.8;
+    background-image: url(/web/assets/img/fondoLogin.gif);
+    border-radius: 2rem;
+    box-shadow: 1px 1px 3px 3px black;  
+   
+}
+
+.form-label{
+    font-size: 1rem;
+    color: #fefefe;
+}
+
+.inputsTransferencias{
+    width: 30rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .5rem;
+    
+  
+}
+.descripcion{
+   height: 4rem;
+  
+}
+
+.imgLogin{
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   height: 5rem;
+   border-radius: 100%;
+   border: 3px solid black;
+   
+  }
+.grow_box{
+    background-image: linear-gradient(to right bottom, #ca918a, #ce746a, #cf5b4e, #d14334, #d33927);
+    border: none;
+}
+    .botonCrearTarjeta a {
+        color: #fefefe;
+        text-decoration: none;
+      }
+
+      button:hover {
+        color: #d14334;
+      }
+
+.form-select{
+    width: 15rem !important;
+}
+
+footer{
+    margin-top: 1rem !important;
+}
+@media screen and (max-width:768px) {
+    /* .form-control{
+        width: 10rem !important;
+    } */
+    .inputsTransferencias{
+        width: 20rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: .5rem;
+        
+      
+    }
+}
+@media screen and (max-width:425px) {
+    .creaNuevaTarjeta{
+     
+        width: 70%;
+    
+       
+    }
+    .inputsTransferencias{
+        width: 15rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: .5rem;
+        
+      
+    }
+    .form-label{
+        text-align: center;
+    }
+    div .navbar-brand{
+        display: none;
+    }
+    .grow_box{
+        height: 6rem;
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width:375px) {
+    
+    
+    
+     
+     
+  }
+  
+@media screen and (max-width:320px) {
+    .creaNuevaTarjeta{
+     
+        width: 80%;
+    
+       
+    }
+    .inputsTransferencias{
+        width: 14rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: .5rem;
+        
+      
+    }
+}

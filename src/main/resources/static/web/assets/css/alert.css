@@ -1,0 +1,13 @@
+  /*MANTENIMIENTO*/
+  .mantenimiento{
+    max-height: 15rem;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: #d14334;
+    color: #fefefe;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 3px 3px ;
+  }

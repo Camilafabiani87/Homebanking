@@ -1,0 +1,889 @@
+
+.onlineBanking{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.navbar-brand{
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.navBarBrand{
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.brand-box {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.brand { font-size: 20px; }
+/*CUERPO, MAIN*/
+.mainCarousel{
+  margin-left: -2rem;
+}
+.mainCarousel1{
+    min-height: 15vh;
+    margin-top: -7rem;
+  }
+  .segundoMain{
+    margin-top: 5rem;
+  }
+  
+  .cuartoMain{
+      max-height: 120vh ;
+      margin-top: 5rem;
+      margin-bottom: 5rem;
+  }
+  
+  /*CAROUSEL*/
+  .mainCarousel{
+      text-align: center;
+      font-family: sans-serif;
+      color: #fefefe;
+      min-height: 20rem;
+  }
+  
+  .container {
+    position: relative;
+    width: 300px;
+    margin: 100px auto 0 auto;
+    perspective: 1000px;
+  }
+  
+  .carousel2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d; 
+    animation: rotate360 60s infinite forwards linear;
+    
+  }
+  .carousel__face { 
+    position: absolute;
+    width: 300px;
+    height: 140px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
+    display: flex;
+  }
+  span {
+    margin: auto;
+    font-size: 2rem;
+  }
+    .carousel__face:nth-child(1) {
+      background-image: url("https://images.pexels.com/photos/1141853/pexels-photo-1141853.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+      transform: rotateY(  0deg) translateZ(430px); }
+    .carousel__face:nth-child(2) { 
+      background-image: url("https://images.pexels.com/photos/1258865/pexels-photo-1258865.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+        transform: rotateY( 40deg) translateZ(430px); }
+    .carousel__face:nth-child(3) {
+      background-image: url("https://images.pexels.com/photos/808466/pexels-photo-808466.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+      transform: rotateY( 80deg) translateZ(430px); }
+    .carousel__face:nth-child(4) {
+      background-image: url("https://images.pexels.com/photos/1394841/pexels-photo-1394841.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+      transform: rotateY(120deg) translateZ(430px); }
+    .carousel__face:nth-child(5) { 
+      background-image: url("https://images.pexels.com/photos/969679/pexels-photo-969679.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+     transform: rotateY(160deg) translateZ(430px); }
+    .carousel__face:nth-child(6) { 
+      background-image: url("https://images.pexels.com/photos/1834400/pexels-photo-1834400.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+     transform: rotateY(200deg) translateZ(430px); }
+    .carousel__face:nth-child(7) { 
+      background-image: url("https://images.pexels.com/photos/1415268/pexels-photo-1415268.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+     transform: rotateY(240deg) translateZ(430px); }
+    .carousel__face:nth-child(8) {
+      background-image: url("https://images.pexels.com/photos/135018/pexels-photo-135018.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+      transform: rotateY(280deg) translateZ(430px); }
+    .carousel__face:nth-child(9) {
+      background-image: url("https://images.pexels.com/photos/969679/pexels-photo-969679.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+      transform: rotateY(320deg) translateZ(430px); }
+     
+  
+    @keyframes rotate360 {
+      from {
+        transform: rotateY(0deg);
+      }
+      to {
+        transform: rotateY(-360deg);
+      }
+    }
+  
+   /*CARTAS ROJAS*/ 
+    .cardPerspectiva {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    margin-top: -3rem;
+  }
+  .parrafoCartaRoja2{
+    font-size: 1.5rem;
+  }
+  .card1 {
+    text-align:center;
+    left: 100px;
+    width: 250px;
+    height: 350px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #ff5252;
+    transition:.6s;
+    box-shadow: 0px 20px 60px rgba(0,0,0, 0.5);
+  }
+  .card1:hover{
+    transform: rotatex(0deg);
+    transform: rotatez(0deg);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+    transition:.6s ease-in-out;
+  }
+  .card1 img{
+    transform: translateY(15px);
+    width:130px;
+    height:120px;
+  }
+  h3{
+    font-size:30px;
+    font-family: 'Abel', sans-serif;
+    color:rgb(255,255,255);
+    text-shadow: 0 0 2px rgb(255,255,255);
+    transform: translatey(10px);
+  }
+  
+  p{
+    font-family: 'Abel', sans-serif;
+    color: white;
+    text-align:center;
+    width:200px;
+    transform: translatex(12px);
+  }
+  
+  .card2 {
+    text-align:center;
+    left: 550px;
+    width: 250px;
+    height: 350px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #ff5252;
+    animation: animate 1s linear infinite;
+    transition:.6s;
+    box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.5);
+  }
+  .card2:hover{
+     transform: rotatex(0deg);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+    transition:.6s ease-in-out;
+  }
+  .card2 img{
+    transform: translateY(15px);
+    width:130px;
+    height:120px;
+  }
+  .card3 {
+  
+    text-align:center;
+    left: 1000px;
+    width: 250px;
+    height: 350px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #ff5252;
+    transition:.6s;
+    box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.5);
+  }
+  .card3:hover{
+     transform: rotatex(0deg);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+    transition:.6s ease-in-out;
+  }
+  .card3 img{
+    transform: translateY(15px);
+    width:130px;
+    height:120px;
+  }
+
+  /*CARTAS ROJAS CUADRADAS*/
+.section_our_solution .row {
+    align-items: center;
+  }
+  .nav-linkyy{
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fefefe;
+  }
+  .botonCartaRoja{
+    height: 2rem;
+  }
+   
+  .our_solution_category {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+   .our_solution_category .solution_cards_box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+    .solution_cards_box .solution_card {
+      flex: 0 50%;
+      background: #ff5252;;
+      box-shadow: 0 2px 4px 0 rgba(136, 144, 195, 0.2),
+        0 5px 15px 0 rgba(37, 44, 97, 0.15);
+      border-radius: 15px;
+      margin: 8px;
+      padding: 10px 15px;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+      max-height: 25rem;
+      transition: 0.7s;
+    }
+    
+    .solution_cards_box .solution_card:hover {
+      background: #ff5252;
+      color: #fff;
+      transform: scale(1.1);
+      z-index: 9;
+    }
+    
+    .solution_cards_box .solution_card:hover::before {
+      background: rgb(85 108 214 / 10%);
+    }
+    
+    .solution_cards_box .solution_card:hover .solu_title h3,
+    .solution_cards_box .solution_card:hover .solu_description p {
+      color: #fff;
+    }
+    
+    .solution_cards_box .solution_card:before {
+      content: "";
+      position: absolute;
+      background: rgb(85 108 214 / 5%);
+      width: 170px;
+      height: 200px;
+      z-index: -1;
+      transform: rotate(42deg);
+      right: -56px;
+      top: -23px;
+      border-radius: 35px;
+    }
+    
+    .solution_cards_box .solution_card:hover .solu_description button {
+      background:#212121 !important;
+      color: #212121;
+    }
+     .solution_card .solu_title h3 {
+      color: #212121;
+      font-size: 1.3rem;
+      margin-top: 13px;
+      margin-bottom: 13px;
+    }
+    
+    .solution_card .solu_description p {
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+    
+    .solution_card .solu_description button {
+      border: 0;
+      border-radius: 15px;
+      background: linear-gradient(
+        140deg,
+        #42c3ca 0%,
+        #212121 50%,
+        #212121 75%
+      ) !important;
+      color: #fff;
+      font-weight: 500;
+      font-size: 1rem;
+      padding: 5px 16px;
+    }
+    
+    .our_solution_content h1 {
+      text-transform: capitalize;
+      margin-bottom: 1rem;
+      font-size: 2.5rem;
+    }
+    
+    .hover_color_bubble {
+      position: absolute;
+      background: rgb(54 81 207 / 15%);
+      width: 100rem;
+      height: 100rem;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      top: 16rem;
+      border-radius: 50%;
+      transform: rotate(-36deg);
+      left: -18rem;
+      transition: 0.7s;
+    }
+    
+    .solution_cards_box .solution_card:hover .hover_color_bubble {
+      top: 0rem;
+    }
+    
+    .solution_cards_box .solution_card .so_top_icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #fff;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .solution_cards_box .solution_card .so_top_icon img {
+      width: 40px;
+      height: 50px;
+      object-fit: contain;
+    }
+
+     /*carousel 2*/
+  .imagenPromocion{
+    opacity: 0.8;
+    max-height: 45rem;
+    object-fit:cover;
+  }
+
+  .carousel-control-next-icon{
+    background-color:#ff5252;
+    opacity: 0.9;
+  }
+  .carousel-control-prev-icon{
+    background-color:#ff5252;
+    opacity: 0.9;
+  }
+
+  /*MEDIAS*/
+  @media screen and (max-width:1024px) {
+   
+    .mainCarousel{
+        min-height: 15rem;
+        transform: scale(.8);
+      }
+      span {
+        font-size: 1.5rem;
+      }
+      
+      .nav-linkyy{
+        font-size: 1rem;
+        text-decoration: none;
+        color: #fefefe;
+      }
+      .botonCartaRoja{
+        height: 2rem;
+      }
+ 
+}
+@media screen and (max-width:992px) {
+    .mainCarousel{
+        min-height: 15rem;
+        transform: scale(.8);
+    }
+    
+    .nav-linkyy{
+      font-size: 1rem;
+      text-decoration: none;
+      color: #fefefe;
+     }
+    .botonCartaRoja{
+      height: 2rem;
+     }
+}
+@media screen and (max-width:768px) {
+  .onlineBanking{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .navBarBrand{
+        font-size: 2rem;
+      }
+    
+    .content {
+        height:30vh;
+      }
+    .mainCarousel{
+        min-height: 15rem; 
+        transform: scale(.6);   
+      }
+      
+    .solution_cards_box .solution_card {
+      margin: 8px;
+      padding: 10px 15px;
+      max-height: 15rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+    .nav-linkyy{
+      font-size: 1rem;
+      text-decoration: none;
+      color: #fefefe;
+     }
+     .botonCartaRoja{
+      height: 2rem;
+     }
+    .cardPerspectiva {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content:center;
+      align-items: center;
+    }
+}
+@media screen and (max-width:425px) {
+    .contactanos{
+        display: none;
+      }
+      .navbar-brand{
+        font-size: 1rem;
+      }
+      .navBarBrand{
+        font-size: 1.2rem;
+      }
+      h4.text-center{
+        font-size: 1rem;
+      }
+      .logo{
+        width: 1.8rem;
+        height: 1.8rem;
+      }
+      .onlineBanking{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: .8rem;
+      }
+      .content {
+        height:30vh;
+      }
+    .mainCarousel{
+     
+        transform: scale(.4);   
+      }
+      .mainCarousel1{
+        margin-top: -10rem;
+        margin-left: 1rem;
+        margin-bottom: -3rem;
+      } 
+    span {
+      font-size: 1.5rem;
+    }
+    .cuartoMain{
+      max-height: 120vh ;
+      margin-top: 2rem;
+      margin-bottom: 5rem;
+
+  }
+    
+
+    .solution_cards_box .solution_card {
+      flex: 0 50%;
+      background: #ff5252;;
+      box-shadow: 0 2px 4px 0 rgba(136, 144, 195, 0.2),
+        0 5px 15px 0 rgba(37, 44, 97, 0.15);
+      border-radius: 15px;
+      margin: 8px;
+      padding: 10px 15px;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+      max-height: 8rem;
+     
+      margin-left: 2rem;
+      margin-right: 2rem;
+      transition: 0.7s;
+    }
+
+    
+   
+   .solu_description p {
+     display: none;
+    }
+    .nav-linkyy{
+      font-size: 1rem;
+      text-decoration: none;
+      color: #fefefe;
+     }
+     .botonCartaRoja{
+      display: none;
+     }
+    .cardPerspectiva {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content:center;
+      align-items: center;
+      
+    }
+    
+    .card1 {
+      text-align:center;
+      left: 100px;
+      width: 200px;
+      height: 260px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background-color: #ff5252;
+      transition:.6s;
+      box-shadow: 0px 20px 60px rgba(0,0,0, 0.5);
+    }
+    .card1 img{
+      transform: translateY(15px);
+      width:100px;
+      height:110px;
+    }
+    .card2 img{
+      transform: translateY(15px);
+      width:100px;
+      height:110px;
+    }
+    .card3 img{
+      transform: translateY(15px);
+      width:100px;
+      height:110px;
+    }
+    .card2 {
+      text-align:center;
+      left: 550px;
+      width: 200px;
+      height: 260px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background-color: #ff5252;
+      animation: animate 1s linear infinite;
+      transition:.6s;
+      box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.5);
+      
+    }
+    
+    .card3 {
+    
+      text-align:center;
+      left: 1000px;
+      width: 200px;
+      height: 260px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background-color: #ff5252;
+      transition:.6s;
+      box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.5);
+    }
+    /* h3{
+      font-size:1rem;
+      font-family: 'Abel', sans-serif;
+      color:rgb(255,255,255);
+      text-shadow: 0 0 2px rgb(255,255,255);
+      
+    } */
+    h3{
+      font-size:1rem !important;
+      color: #fefefe !important;}
+    p{
+      
+      font-family: 'Abel', sans-serif;
+      font-size: .2rem;
+      color:#ff5252;
+      text-align:center;
+      }
+     /*TARJETA DE CREDITO 375*/
+    .tarjetaCredito div h5{
+      text-align: center;
+    }
+    }
+    
+    @media screen and (max-width:375px){
+    
+   .segundoMain{
+margin-bottom: 1rem;
+   }
+   /* h2 .navbar-brand{
+    margin-top: .5rem !important;
+   } */
+
+  .mainCarousel{
+      /* height: 10rem; 
+      transform: scale(0.33,0.5);    */
+      /* transform: scaleX(.2) */
+      display: none;
+    }
+    .mainCarousel1{
+      height: 25rem;
+      background-image: url(../img/425-gif.gif);
+      background-size:cover;
+      border: #212121 solid 2px;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      
+    }
+  
+  span {
+    font-size: 1.5rem;
+  }
+    .solution_cards_box .solution_card {
+      border-radius: 15px;
+      margin: 8px;
+      max-height: 15rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+     }
+    .nav-linkyy{
+      font-size: 1rem;
+      text-decoration: none;
+      color: #fefefe;
+     }
+     .botonCartaRoja{
+      height: 2rem;
+     }
+    .cardPerspectiva {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content:center;
+      align-items: center;
+    }
+    .parrafoCartaRoja2{
+      font-size: 3rem;
+      display: none;
+    }
+    .card1 {
+      width: 200px;
+      height: 200px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .card1 img{
+      width:70px;
+      height:70px;
+    }
+    .card2 img{
+      width:70px;
+      height:70px;
+    }
+    .card3 img{
+      width:70px;
+      height:70px;
+    }
+    .card2 {
+      left: 550px;
+      width: 200px;
+      height: 200px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .card3 {
+      left: 1000px;
+      width: 200px;
+      height: 200px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    h3{
+      font-size:1.5rem !important;
+      color: #fefefe !important;
+    }
+    p{
+      font-size: .2rem;
+      color:#ff5252;
+      text-align:center;
+    }
+}
+
+@media screen and (max-width:320px) {
+  .navbar-brand{
+    font-size: .97rem !important;
+  }
+      .solution_cards_box .solution_card {
+        flex: 0 50%;
+        background: #ff5252;
+        box-shadow: 0 2px 4px 0 rgba(136, 144, 195, 0.2),
+          0 5px 15px 0 rgba(37, 44, 97, 0.15);
+        border-radius: 15px;
+        margin: 8px;
+        padding: 10px 15px;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        max-height: 25rem;
+        width: 15rem;
+        display: flex;
+        justify-content:flex-start;
+        align-content:flex-start;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        transition: 0.7s;
+      }
+      
+      .nav-linkyy{
+        font-size: .5rem;
+        text-decoration: none;
+        color: #fefefe;
+       }
+       .botonCartaRoja{
+        height: 1.8rem;
+        width: 6.4rem;
+        }
+       .our_solution_content h1 {
+        text-transform: capitalize;
+        margin-bottom: 1rem;
+        font-size: .8rem;
+      }
+      
+      .solution_card .solu_title h3 {
+        color:#fefefe;
+        font-size: .8rem;
+    
+        
+      }
+      
+      .solution_cards_box .solution_card:hover .solu_title h3,
+      .solution_cards_box .solution_card:hover .solu_description p {
+        color:#ff5252;
+        font-size: .5rem;
+      
+      }
+
+      .solu_description p{
+        display: none;
+      }
+      
+      .solution_cards_box .solution_card .so_top_icon {
+       display: none;
+      }
+      
+      .solution_cards_box .solution_card .so_top_icon img {
+        display: none;
+      }
+      .cardPerspectiva {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        
+      }
+      .parrafoCartaRoja2{
+        font-size: 3rem;
+        display: none;
+      }
+      .card1 {
+        text-align:center;
+        left: 100px;
+        width: 200px;
+        height: 150px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: #ff5252;
+        transition:.6s;
+        box-shadow: 0px 20px 60px rgba(0,0,0, 0.5);
+      }
+      .card1 img{
+        width:70px;
+        height:70px;
+      }
+      .card2 img{
+        width:70px;
+        height:70px;
+      }
+      .card3 img{
+        width:70px;
+        height:70px;
+      }
+      .card2 {
+        text-align:center;
+        left: 550px;
+        width: 200px;
+        height: 150px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: #ff5252;
+        animation: animate 1s linear infinite;
+        transition:.6s;
+        box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.5);
+        
+      }
+      
+      .card3 {
+      
+        text-align:center;
+        left: 1000px;
+        width: 200px;
+        height: 150px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: #ff5252;
+        transition:.6s;
+        box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.5);
+      }
+      h3{
+        font-size:1.5rem !important;
+        font-family: 'Abel', sans-serif;
+        color:rgb(255,255,255);
+        text-shadow: 0 0 2px rgb(255,255,255);
+        
+      }
+      
+      p{
+        
+        display: none;
+        
+      }
+      .nav-linkyy{
+        font-size: .8rem !important;
+
+      }
+      .botonCartaRoja{
+        display: none;
+      }
+}
+
+/*MIN MEDIA*/
+
+@media screen and (min-width: 320px) {
+    /*cartas rojas con hover*/
+    .sol_card_top_3 {
+      position: relative;
+      top: 0;
+    }
+  
+    .our_solution_category {
+      width: 100%;
+      margin: 0 auto;
+    }
+  
+    .our_solution_category .solution_cards_box {
+      flex: auto;
+    }
+    /*cartas rojas con hover*/
+  
+  }
+  @media only screen and (min-width: 768px) {
+    /*cartas rojas con hover*/
+   .our_solution_category .solution_cards_box {
+    flex: 1;
+  }
+  }
+   
+  
+  @media only screen and (min-width: 1024px) {
+    .sol_card_top_3 {
+      position: relative;
+      top: -3rem;
+    }
+    .our_solution_category {
+      width: 50%;
+      margin: 0 auto;
+    }
+  }

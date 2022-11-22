@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"/>
+      
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"/>
+    <link rel="stylesheet" href="manager.css" />
+    
+    <title>Manager</title>
+  </head>
+  <body>
+    <div id="app">
+        <main class="mainPag">
+            <div class="parte1">
+            <h2>Client Manager</h2>
+            
+      <div id="mainForm">
+        <div  class="container-fluid d-flex justify-content-center p-2 ">
+          <form @submit.prevent="" class="row g-2">
+            <div class="col-6">
+              <div class="row">
+                <label for="inputNombre" class="form-label">Nombre</label>
+                <div class="col">
+                  <input v-model= "primerNombre" name="nombre" type="text" class="form-control" placeholder="Nombre" aria-label="Nombre"/>
+                </div>
+                <label for="inputApellido" class="form-label mt-2">Apellido</label>
+                <div class="col">
+                  <input v-model= "apellido" name="apellido" type="text" class="form-control" placeholder="Apellido" aria-label="Apellido"/>
+                </div>
+              </div>
+            </div>
+           
+                <div class="col-8">
+              <label for="inputAddress" class="form-label">Email</label>
+              <input v-model= "email" name="email" type="text" class="form-control" placeholder="camilafabiani@gmail.com"/>
+            </div>
+           <div class="col-12">
+              <button v-on:click="agregarCliente()" type="submit" class="btn btn-dark m-3">Agregar Cliente</button>
+              <button v-on:click="editarCliente()" type="submit" class="btn btn-dark ">Guardar Cambios</button>
+            </div>
+            
+          </form>
+        </div>
+      </div>
+    
+     
+   
+    <h2 class="mt-4">Client List</h2>
+    <table class="table table-responsive table-dark table-striped">
+        <thead>
+          <tr>
+           
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">Email</th>
+            <th scope="col">Actualizar</th>
+           
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for = "client of clients">
+            
+            <td>{{client.primerNombre}}</td>
+            <td>{{client.apellido}}</td>
+            <td>{{client.email}}</td>
+            <td><button v-on:click="mostrarDatos(client)" type="button" class="btn btn-dark m-2"><span class="material-symbols-outlined">
+edit</span></button><button v-on:click="eliminarCliente(client)" type="button" class="btn btn-dark"><span class="material-symbols-outlined">
+              delete </span></button></td>
+            
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+
+
+      <div class="parte2" id="clientRest">
+      <h2 class="clientRest">Client REST response</h2>
+      <pre>{{arrayJson}}</pre>
+      </div>
+    </main>
+      <footer>
+        <h3 class="fs-6 p-2">Cohort 33</h3>
+      </footer>
+    </div>
+
+
+    <!--AXIOS-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Bootstrap -->
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Vue -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./manager.js"></script>
+    
+  </body>
+</html>

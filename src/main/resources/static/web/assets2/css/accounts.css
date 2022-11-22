@@ -1,0 +1,619 @@
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: .2rem !important;
+  color: var(--bs-list-group-color);
+  text-decoration: none;
+  background-color: var(--bs-list-group-bg);
+  border: solid 1px #cf5b4e ;
+}
+
+.list-group-item:hover{
+  color: #cf5b4e;
+}
+/*CUENTAS*/
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  background-color: #fff;
+  cursor: pointer;
+  
+}
+.bienvenida{
+    display: flex;
+    justify-content: center;
+  }
+
+  .menuCuentaTarjeta .list-group{
+    text-align: center;
+    
+  }
+
+  .botonCrearCuenta{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .grow_box {
+    font-size: 2em;
+    background: #d14334;
+    color: #fff;
+    border: 0.25rem solid #d14334;
+    border-radius: 1rem;
+    box-shadow: 3px 3px #212121;
+    padding: 0.85em 0.75em;
+    margin: 1rem;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .grow_box:hover {
+    color: #d14334;
+  }
+  .grow_box::after {
+    content: "";
+    background: #ecf0f1;
+    position: absolute;
+    z-index: -1;
+    padding: 0.85em 0.75em;
+    display: block;
+  }
+  .grow_box[class^="slide"]::after {
+    transition: all 0.35s;
+  }
+  .grow_box[class^="slide"]:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all 0.35s;
+  }
+  .grow_box.slide_from_left::after {
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+  }
+  .grow_box.slide_from_right::after {
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    right: -100%;
+  }
+  .grow_box.slide_from_top::after {
+    left: 0;
+    right: 0;
+    top: -100%;
+    bottom: 100%;
+  }
+  .grow_box.slide_from_bottom::after {
+    left: 0;
+    right: 0;
+    top: 100%;
+    bottom: -100%;
+  }
+  .grow_box[class^="grow"]::after {
+    transition: all 0.3s ease;
+  }
+  .grow_box[class^="grow"]:hover::after {
+    transition: all 0.3s ease-out;
+  }
+  .grow_box.grow_box::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: scale(0, 0);
+  }
+  .grow_box.grow_box:hover::after {
+    transform: scale(1, 1);
+  }
+  .grow_box.grow_ellipse::after {
+    border-radius: 50%;
+    left: -50%;
+    right: -50%;
+    top: -150%;
+    bottom: -150%;
+    line-height: 8.34em;
+    transform: scale(0, 0);
+  }
+  .grow_box.grow_ellipse:hover::after {
+    transform: scale(1, 1);
+  }
+  .grow_box.grow_skew_forward::after {
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+  }
+  .grow_box.grow_skew_forward:hover::after {
+    transform: skewX(-45deg) scale(1, 1);
+  }
+  .grow_box.grow_skew_backward::after {
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(45deg) scale(0, 1);
+  }
+  .grow_box.grow_skew_backward:hover::after {
+    transform: skewX(45deg) scale(1, 1);
+  }
+  .grow_box.grow_spin::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: scale(0, 0) rotate(-180deg);
+  }
+  .grow_box.grow_spin:hover::after {
+    transform: scale(1, 1) rotate(0deg);
+  }
+  .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.waves{
+  display: none;
+}
+.footerVistas {
+  margin-bottom: 0rem;
+  /* margin-left: -15rem; */
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cuentas{
+    width: 100%;
+    min-height: 20rem;
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap:2rem;
+  /* background-image: url(/web/assets/img/flechas.png);
+  background-size: cover;
+  background-repeat: no-repeat; */
+   background-image: url(/web/assets/img/fondo2.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  }
+  
+.cuentas2{
+  width: 80%;
+    min-height: 20rem;
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap:2rem
+}
+  .card-footer{
+    background-color: #d14334;
+    height: 5rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
+  }
+ 
+
+  .cardCuentas{
+     box-shadow: 1px 1px 3px 3px;
+     
+     
+  }
+  .cardCuentas:hover{
+    transform: scale(1.1);
+    transition: .4s ease-in-out;
+  }
+  
+  
+
+  .card-footer a {
+    color: #fefefe;
+    font-size: 1rem;
+   
+  
+    
+  }
+  /* .list-group.list-group-flush{
+border-radius: 1rem;
+  } */
+
+  .contenedordePrestamos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+  }
+.prestamos{
+  width: 90%;
+  min-height: 25rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    padding: 2rem;
+    background-color:#d14334;
+    border-radius: 2rem;
+    box-shadow: 1px 1px 3px 3px black;
+  gap:1rem
+}
+
+.grow_box a{
+  text-decoration: none;
+  color: #fefefe;
+}
+
+.grow_box a:hover{
+  text-decoration: none;
+  color:#d14334;
+}
+
+
+.prestamos h2{
+  font-size: 1.5rem;
+  color: #fefefe;
+  
+ 
+}
+.prestamos2{
+  width: 90%;
+  min-height: 25rem;
+  background-color:#ff5252;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap:1rem
+}
+.cardPrestamos{
+  box-shadow:white  3px 3px;
+  border-radius: 1rem;
+  width: 55%;
+ 
+  
+}
+/* .list-group.list-group-flush{
+  border-radius: 1rem;
+
+} */
+.cardPrestamos:hover{
+  transform: scale(1.1);
+  transition: .4s ease-in-out;
+}
+
+  .opciones{
+    width: 100%;
+    margin-top: 4rem;
+  }
+
+  /*CARTAS ROJAS CUADRADAS*/
+.section_our_solution .row {
+    align-items: center;
+  }
+  .nav-linkyy{
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fefefe;
+  }
+  .botonCartaRoja{
+    height: 2rem;
+  }
+   
+  .our_solution_category {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+   .our_solution_category .solution_cards_box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+    .solution_cards_box .solution_card {
+      flex: 0 50%;
+      background: #ff5252;;
+      box-shadow: 0 2px 4px 0 rgba(136, 144, 195, 0.2),
+        0 5px 15px 0 rgba(37, 44, 97, 0.15);
+      border-radius: 15px;
+      margin: 8px;
+      padding: 10px 15px;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+      max-height: 25rem;
+      transition: 0.7s;
+    }
+    
+    .solution_cards_box .solution_card:hover {
+      background: #ff5252;
+      color: #fff;
+      transform: scale(1.1);
+      z-index: 9;
+    }
+    
+    .solution_cards_box .solution_card:hover::before {
+      background: rgb(85 108 214 / 10%);
+    }
+    
+    .solution_cards_box .solution_card:hover .solu_title h3,
+    .solution_cards_box .solution_card:hover .solu_description p {
+      color: #fff;
+    }
+    
+    .solution_cards_box .solution_card:before {
+      content: "";
+      position: absolute;
+      background: rgb(85 108 214 / 5%);
+      width: 170px;
+      height: 200px;
+      z-index: -1;
+      transform: rotate(42deg);
+      right: -56px;
+      top: -23px;
+      border-radius: 35px;
+    }
+    
+    .solution_cards_box .solution_card:hover .solu_description button {
+      background:#212121 !important;
+      color: #212121;
+    }
+     .solution_card .solu_title h3 {
+      color: #212121;
+      font-size: 1.3rem;
+      margin-top: 13px;
+      margin-bottom: 13px;
+    }
+    
+    .solution_card .solu_description p {
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+    
+    .solution_card .solu_description button {
+      border: 0;
+      border-radius: 15px;
+      background: linear-gradient(
+        140deg,
+        #42c3ca 0%,
+        #212121 50%,
+        #212121 75%
+      ) !important;
+      color: #fff;
+      font-weight: 500;
+      font-size: 1rem;
+      padding: 5px 16px;
+    }
+    
+    .our_solution_content h1 {
+      text-transform: capitalize;
+      margin-bottom: 1rem;
+      font-size: 2.5rem;
+    }
+    
+    .hover_color_bubble {
+      position: absolute;
+      background: rgb(54 81 207 / 15%);
+      width: 100rem;
+      height: 100rem;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      top: 16rem;
+      border-radius: 50%;
+      transform: rotate(-36deg);
+      left: -18rem;
+      transition: 0.7s;
+    }
+    
+    .solution_cards_box .solution_card:hover .hover_color_bubble {
+      top: 0rem;
+    }
+    
+    .solution_cards_box .solution_card .so_top_icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #fff;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .solution_cards_box .solution_card .so_top_icon img {
+      width: 40px;
+      height: 50px;
+      object-fit: contain;
+    }
+
+  /*MEDIAS*/
+  @media screen and (max-width:1024px) {
+   
+    .nav-linkyy{
+   font-size: 1rem;
+   text-decoration: none;
+   color: #fefefe;
+ }
+ 
+}
+@media screen and (max-width:992px) {
+
+}
+@media screen and (max-width:768px) {
+    .navBarBrand{
+        font-size: 2rem;
+      }
+    
+    .content {
+        height:30vh;
+      }
+    .mainCarousel{
+        min-height: 15rem; 
+        transform: scale(.6);   
+      }
+      
+    .solution_cards_box .solution_card {
+      margin: 8px;
+      padding: 10px 15px;
+      max-height: 15rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+    .nav-linkyy{
+      font-size: 1rem;
+      text-decoration: none;
+      color: #fefefe;
+     }
+     .botonCartaRoja{
+      height: 2rem;
+     }
+    .cardPerspectiva {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content:center;
+      align-items: center;
+    }
+
+    .prestamos h2{
+      font-size: 1.2rem;
+      color: #fefefe;
+      padding: .2rem;
+      
+     
+    }
+}
+@media screen and (max-width:425px) {
+  .prestamos h2{
+    text-align: center;
+    
+   
+  }
+  .contenedroNav{
+    margin-top: 1rem !important;
+  }
+  .cuentas{
+    width: 100%;
+    min-height: 57rem;
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap:2rem;
+  /* background-image: url(/web/assets/img/flechas.png);
+  background-size: cover;
+  background-repeat: no-repeat; */
+   background-image: url(/web/assets/img/fondo2.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  }
+}
+@media screen and (max-width:375px) {
+  .cardPrestamos{
+    box-shadow:white  3px 3px;
+    border-radius: 1rem;
+    width: 90% !important;
+   
+    
+  }
+}
+@media screen and (max-width:320px) {
+  .grow_box {
+    font-size: 1em;
+    background: #d14334;
+    color: #fff;
+    border: 0.25rem solid #d14334;
+    border-radius: 1rem;
+    box-shadow: 3px 3px #212121;
+    padding: 0.85em 0.75em;
+    margin: 1rem;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .prestamos h2{
+    font-size: 1rem;
+    color: #fefefe;
+    padding: .5rem;
+   
+  }
+  .cardPrestamos{
+    box-shadow:white  3px 3px;
+    border-radius: 1rem;
+    width: 90% !important;
+   
+    
+  }
+ .list-group-item{
+  font-size: .8rem;
+ }
+}
+/*MIN MEDIA*/
+
+@media screen and (min-width: 320px) {
+    /*cartas rojas con hover*/
+    .sol_card_top_3 {
+      position: relative;
+      top: 0;
+    }
+  
+    .our_solution_category {
+      width: 100%;
+      margin: 0 auto;
+    }
+  
+    .our_solution_category .solution_cards_box {
+      flex: auto;
+    }
+    /*cartas rojas con hover*/
+  
+  }
+  @media only screen and (min-width: 768px) {
+    /*cartas rojas con hover*/
+   .our_solution_category .solution_cards_box {
+    flex: 1;
+  }
+  }
+   
+  
+  @media only screen and (min-width: 1024px) {
+    .sol_card_top_3 {
+      position: relative;
+      top: -3rem;
+    }
+    .our_solution_category {
+      width: 50%;
+      margin: 0 auto;
+    }
+  }

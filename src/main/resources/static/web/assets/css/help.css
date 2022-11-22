@@ -1,0 +1,63 @@
+/*Centro de ayuda*/
+.formContacto{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    width: 60%;
+  }
+
+  .contactanos{
+    width: 40%;
+    max-height: 40rem;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: #d14334;
+    color: #fefefe;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 3px 3px ;
+  }
+
+  .contactoGif img{
+    height: 15rem;
+       /* width: 100% !important; */
+       background-position: left;
+       background-size: cover;
+     }
+
+  /*MEDIAS*/
+  @media screen and (max-width:1024px) {
+   
+    .nav-linkyy{
+   font-size: 1rem;
+   text-decoration: none;
+   color: #fefefe;
+ }
+ 
+}
+@media screen and (max-width:992px) {
+
+}
+@media screen and (max-width:768px) {
+
+}
+@media screen and (max-width:425px) {
+.contactanos{
+  display: none;
+}
+footer {
+
+  margin-top: 3rem;
+}
+.navFooter{
+  display: none;
+}
+}
+@media screen and (max-width:375px) {
+
+}
+@media screen and (max-width:320px) {
+
+}

@@ -1,0 +1,74 @@
+*{
+    font-family: 'Dosis', sans-serif;
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+    /* border: 1px red solid; */
+}
+.mainPag{
+    display: flex;
+    
+}
+
+
+#mainForm{
+    background-color:#d14334;
+    color: white;
+    border-radius: 1rem;
+    max-width: 40rem;
+   
+}
+
+table{
+    max-width: 40rem;
+    
+}
+.parte1{
+    width: 50%;
+    margin-left: 1rem;
+    margin-top: 1rem;
+
+}
+.parte2{
+    width: 50%;
+    margin-left: 1rem;
+    margin-top: 1rem;
+
+}
+
+footer{
+    height: 5rem;
+    background-color: #d14334;
+    color: antiquewhite;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width:425px){
+    table{
+        font-size: .9rem;
+        
+
+    }
+  
+}
+
+@media screen and (max-width:375px){
+    table{
+        font-size: .8rem;
+        
+
+    }
+    
+}
+
+@media screen and (max-width:320px){
+    table{
+        font-size: .6rem;
+        
+
+    }
+    
+}
